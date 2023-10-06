@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hostel 2 Leaderboard</title>
+</head>
+<body>
+    <div class="leaderboard-container">
+        <h1>Hostel 2 Leaderboard</h1>
+        <label for="filter">Filter By:</label>
+        <select id="filter">
+            <option value="points">Points</option>
+            <option value="standings">Standings</option>
+        </select>
+        
+<div class="tabs">
+    <button id="overall-tab" class="tab-button active" data-category="Overall">Overall</button>
+    <button id="tech-tab" class="tab-button" data-category="Tech">Tech</button>
+    <button id="culturals-tab" class="tab-button" data-category="Culturals">Culturals</button>
+    <button id="sports-tab" class="tab-button" data-category="Sports">Sports</button>
+</div>
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Competition</th>
+                    <th>Standings</th>
+                    <th>Points</th>
+                    <th>GC Competition Name</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
